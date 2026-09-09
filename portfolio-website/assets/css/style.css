@@ -168,6 +168,17 @@ nav{
     color: var(--text-color-second);
     margin-block: 20px;
 }
+.featured-name h1 {
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    line-height: 1.2;
+    margin-bottom: 10px;
+}
+
+.featured-name p {
+    font-size: 30px;
+}
 .typedText{
     text-transform: capitalize;
     color: var(--text-color-third);
