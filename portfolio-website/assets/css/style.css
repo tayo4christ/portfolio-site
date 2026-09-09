@@ -168,7 +168,7 @@ nav{
     color: var(--text-color-second);
     margin-block: 20px;
 }
-.featured-name h1 {
+.featured-name h1{
     font-size: 50px;
     font-weight: 600;
     color: var(--text-color-second);
@@ -176,7 +176,7 @@ nav{
     margin-bottom: 10px;
 }
 
-.featured-name p {
+.featured-name p{
     font-size: 30px;
 }
 .typedText{
@@ -811,6 +811,14 @@ footer{
 @media only screen and (max-width: 540px){
     .featured-name{
         font-size: 40px;
+    }
+
+    .featured-name h1{
+        font-size: 38px;
+    }
+
+    .featured-name p{
+        font-size: 24px;
     }
     .project-box{
         width: 100%;
