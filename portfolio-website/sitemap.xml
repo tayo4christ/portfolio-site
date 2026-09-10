@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
     <url>
         <loc>https://omotayo-emmanuel-omoyemi.vercel.app/</loc>
     </url>
@@ -7,4 +8,9 @@
     <url>
         <loc>https://omotayo-emmanuel-omoyemi.vercel.app/publications.html</loc>
     </url>
+
+    <url>
+        <loc>https://omotayo-emmanuel-omoyemi.vercel.app/media.html</loc>
+    </url>
+
 </urlset>
