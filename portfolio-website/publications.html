@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Publications | Omotayo Emmanuel Omoyemi</title>
+  <meta name="description" content="Selected publications and research outputs by Omotayo Emmanuel Omoyemi in artificial intelligence, multimodal AI, accessible communication, AAC, speech technology and inclusive education.">
+
+  <link rel="canonical" href="https://omotayo-emmanuel-omoyemi.vercel.app/publications.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Publications | Omotayo Emmanuel Omoyemi">
+  <meta property="og:description" content="Selected publications and research outputs by Omotayo Emmanuel Omoyemi.">
+  <meta property="og:url" content="https://omotayo-emmanuel-omoyemi.vercel.app/publications.html">
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --panel-2: #1f2937;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #60a5fa;
+      --border: rgba(255,255,255,.12);
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a { color: inherit; }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(15, 23, 42, .94);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      font-weight: 800;
+      text-decoration: none;
+      font-size: 1.1rem;
+      letter-spacing: .2px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: .95rem;
+    }
+
+    .nav-links a:hover,
+    .nav-links a[aria-current="page"] {
+      color: var(--text);
+    }
+
+    .hero {
+      padding: 88px 0 48px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-weight: 800;
+      font-size: .8rem;
+      margin: 0 0 12px;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 6vw, 4.6rem);
+      line-height: 1.05;
+      margin: 0 0 20px;
+      max-width: 900px;
+    }
+
+    .intro {
+      color: var(--muted);
+      max-width: 800px;
+      font-size: 1.08rem;
+      margin: 0;
+    }
+
+    main {
+      padding-bottom: 80px;
+    }
+
+    .section-heading {
+      margin: 42px 0 24px;
+    }
+
+    .section-heading h2 {
+      font-size: 1.75rem;
+      margin: 0 0 8px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .pub-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .publication {
+      background: rgba(17, 24, 39, .9);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    .publication:hover {
+      border-color: rgba(96,165,250,.55);
+    }
+
+    .year {
+      display: inline-block;
+      font-size: .78rem;
+      font-weight: 800;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .publication h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      line-height: 1.35;
+    }
+
+    .meta {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .publication p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: .9rem;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      border-color: var(--accent);
+    }
+
+    .profile-links {
+      margin-top: 38px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      background: rgba(31, 41, 55, .65);
+    }
+
+    .profile-links h2 {
+      margin-top: 0;
+    }
+
+    .profile-links p {
+      color: var(--muted);
+    }
+
+    .profile-links .actions {
+      margin-top: 16px;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      text-align: center;
+      padding: 28px 0;
+      font-size: .9rem;
+    }
+
+    @media (max-width: 720px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px 0;
+      }
+
+      .nav-links { gap: 12px; }
+      .hero { padding-top: 58px; }
+      .publication { padding: 20px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Publications by Omotayo Emmanuel Omoyemi",
+    "url": "https://omotayo-emmanuel-omoyemi.vercel.app/publications.html",
+    "about": {
+      "@type": "Person",
+      "@id": "https://omotayo-emmanuel-omoyemi.vercel.app/#person",
+      "name": "Omotayo Emmanuel Omoyemi",
+      "alternateName": "Omotayo Omoyemi"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@type": "ScholarlyArticle",
+            "headline": "Benchmarking Self-Supervised Speech Models on Multilingual Nigerian Speech",
+            "datePublished": "2026",
+            "author": [{"@id": "https://omotayo-emmanuel-omoyemi.vercel.app/#person"}],
+            "sameAs": "https://doi.org/10.31224/6650"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@type": "ScholarlyArticle",
+            "headline": "AURA: An AI-Powered Multimodal Prototype for Adaptive Apraxia of Speech Therapy and Communication Support",
+            "datePublished": "2026",
+            "author": [{"@id": "https://omotayo-emmanuel-omoyemi.vercel.app/#person"}],
+            "sameAs": "https://doi.org/10.31224/6608"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@type": "ScholarlyArticle",
+            "headline": "HandsSpeak: A Real-Time Interactive System for Translating Makaton Gestures into English",
+            "datePublished": "2026",
+            "author": [{"@id": "https://omotayo-emmanuel-omoyemi.vercel.app/#person"}],
+            "sameAs": "https://doi.org/10.5281/zenodo.19132867"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@type": "ScholarlyArticle",
+            "headline": "Human-Centred AI for Makaton-to-English Translation: A Multimodal Interaction Approach",
+            "datePublished": "2025",
+            "author": [{"@id": "https://omotayo-emmanuel-omoyemi.vercel.app/#person"}],
+            "sameAs": "https://doi.org/10.14236/ewic/BCSHCI2025.43"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "item": {
+            "@type": "ScholarlyArticle",
+            "headline": "Designing a Tool that automatically translates Makaton signs from live video streams into written English",
+            "datePublished": "2024",
+            "author": [{"@id": "https://omotayo-emmanuel-omoyemi.vercel.app/#person"}],
+            "sameAs": "https://doi.org/10.1145/3708635.3708647"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Primary navigation">
+        <a class="brand" href="/">Omotayo Emmanuel Omoyemi</a>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/#about">About</a>
+          <a href="/#projects">Projects</a>
+          <a href="/publications.html" aria-current="page">Publications</a>
+          <a href="/#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Research & Academic Output</p>
+      <h1>Publications</h1>
+      <p class="intro">
+        Selected peer-reviewed publications, conference papers and research preprints by
+        Omotayo Emmanuel Omoyemi, focusing on artificial intelligence, multimodal systems,
+        accessible communication, augmentative and alternative communication (AAC), speech
+        technology and inclusive human-centred computing.
+      </p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section aria-labelledby="published-work">
+      <div class="section-heading">
+        <h2 id="published-work">Selected research</h2>
+        <p>Links point to publisher, repository or DOI records.</p>
+      </div>
+
+      <div class="pub-grid">
+
+        <article class="publication">
+          <span class="year">2026 · PREPRINT</span>
+          <h3>Benchmarking Self-Supervised Speech Models on Multilingual Nigerian Speech</h3>
+          <p class="meta"><strong>Omotayo Omoyemi</strong> and Ifeoluwa Oladeni · engrXiv / Engineering Archive</p>
+          <p>
+            A benchmark study evaluating modern self-supervised automatic speech recognition
+            models across English, Hausa, Igbo and Yoruba.
+          </p>
+          <div class="actions">
+            <a class="button" href="https://doi.org/10.31224/6650" target="_blank" rel="noopener noreferrer">DOI →</a>
+            <a class="button" href="https://engrxiv.org/preprint/view/6650" target="_blank" rel="noopener noreferrer">Repository →</a>
+          </div>
+        </article>
+
+        <article class="publication">
+          <span class="year">2026 · PREPRINT</span>
+          <h3>AURA: An AI-Powered Multimodal Prototype for Adaptive Apraxia of Speech Therapy and Communication Support</h3>
+          <p class="meta"><strong>Omotayo Omoyemi</strong> and Rachel K. Johnson · engrXiv</p>
+          <p>
+            A multimodal AI framework designed to support therapy, progress monitoring and
+            communication for people with apraxia of speech.
+          </p>
+          <div class="actions">
+            <a class="button" href="https://doi.org/10.31224/6608" target="_blank" rel="noopener noreferrer">DOI →</a>
+            <a class="button" href="https://digitalcommons.odu.edu/speechpathology_fac_pubs/11/" target="_blank" rel="noopener noreferrer">ODU record →</a>
+          </div>
+        </article>
+
+        <article class="publication">
+          <span class="year">2026 · PREPRINT</span>
+          <h3>HandsSpeak: A Real-Time Interactive System for Translating Makaton Gestures into English</h3>
+          <p class="meta"><strong>Omotayo Omoyemi</strong> · Zenodo</p>
+          <p>
+            A real-time interactive prototype that combines computer vision, gesture
+            classification and an accessible interface to translate basic Makaton gestures
+            into English.
+          </p>
+          <div class="actions">
+            <a class="button" href="https://doi.org/10.5281/zenodo.19132867" target="_blank" rel="noopener noreferrer">DOI →</a>
+            <a class="button" href="https://zenodo.org/records/19132867" target="_blank" rel="noopener noreferrer">Zenodo →</a>
+          </div>
+        </article>
+
+        <article class="publication">
+          <span class="year">2025 · CONFERENCE</span>
+          <h3>Human-Centred AI for Makaton-to-English Translation: A Multimodal Interaction Approach</h3>
+          <p class="meta"><strong>Omotayo Emmanuel Omoyemi</strong> · 38th International BCS Human-Computer Interaction Conference</p>
+          <p>
+            Research on the design and early-stage evaluation of a multimodal AI system for
+            translating Makaton into English text and speech.
+          </p>
+          <div class="actions">
+            <a class="button" href="https://doi.org/10.14236/ewic/BCSHCI2025.43" target="_blank" rel="noopener noreferrer">DOI →</a>
+            <a class="button" href="https://www.scienceopen.com/hosted-document?doi=10.14236%2Fewic%2FBCSHCI2025.43" target="_blank" rel="noopener noreferrer">Publication record →</a>
+          </div>
+        </article>
+
+        <article class="publication">
+          <span class="year">2024 · ACM CONFERENCE PAPER</span>
+          <h3>Designing a Tool that automatically translates Makaton signs from live video streams into written English</h3>
+          <p class="meta">Sokratis Karkalas and <strong>Omotayo Emmanuel Omoyemi</strong> · ICSIE 2024 · ACM</p>
+          <p>
+            A user-centred design study exploring requirements for automatically translating
+            Makaton signs from live video into written English.
+          </p>
+          <div class="actions">
+            <a class="button" href="https://doi.org/10.1145/3708635.3708647" target="_blank" rel="noopener noreferrer">ACM DOI →</a>
+          </div>
+        </article>
+
+        <article class="publication">
+          <span class="year">2024 · RESEARCH ARTICLE</span>
+          <h3>Automated error detection and correction in Augmentative and Alternative Communication (AAC) Systems Using NLP</h3>
+          <p class="meta"><strong>Omotayo Emmanuel Omoyemi</strong> · World Journal of Advanced Research and Reviews, 24(2), 520–525</p>
+          <p>
+            Research examining natural language processing methods for detecting and correcting
+            errors in augmentative and alternative communication systems.
+          </p>
+          <div class="actions">
+            <a class="button" href="https://doi.org/10.30574/wjarr.2024.24.2.3374" target="_blank" rel="noopener noreferrer">DOI →</a>
+            <a class="button" href="https://wjarr.com/content/automated-error-detection-and-correction-augmentative-and-alternative-communication-aac" target="_blank" rel="noopener noreferrer">Publisher →</a>
+          </div>
+        </article>
+
+        <article class="publication">
+          <span class="year">2024 · RESEARCH ARTICLE</span>
+          <h3>Machine learning for predictive AAC: Improving speech and gesture-based communication systems</h3>
+          <p class="meta"><strong>Omotayo Emmanuel Omoyemi</strong> · World Journal of Advanced Research and Reviews, 24(1), 2569–2575</p>
+          <p>
+            Research exploring machine-learning approaches to predictive AAC, including
+            predictive text, speech recognition, gesture interpretation and multimodal inputs.
+          </p>
+          <div class="actions">
+            <a class="button" href="https://doi.org/10.30574/wjarr.2024.24.1.3308" target="_blank" rel="noopener noreferrer">DOI →</a>
+            <a class="button" href="https://wjarr.com/content/machine-learning-predictive-aac-improving-speech-and-gesture-based-communication-systems" target="_blank" rel="noopener noreferrer">Publisher →</a>
+          </div>
+        </article>
+
+        <article class="publication">
+          <span class="year">2024 · RESEARCH ARTICLE</span>
+          <h3>Ethical Implications of AI-Driven AAC Systems: Ensuring Inclusivity and Equity in Assistive Technologies</h3>
+          <p class="meta"><strong>Omotayo Emmanuel Omoyemi</strong> · World Journal of Advanced Research and Reviews, 24(1), 2576–2581</p>
+          <p>
+            An examination of privacy, affordability, representation and equity concerns in
+            AI-driven augmentative and alternative communication technologies.
+          </p>
+          <div class="actions">
+            <a class="button" href="https://doi.org/10.30574/wjarr.2024.24.1.3310" target="_blank" rel="noopener noreferrer">DOI →</a>
+            <a class="button" href="https://wjarr.com/content/ethical-implications-ai-driven-aac-systems-ensuring-inclusivity-and-equity-assistive" target="_blank" rel="noopener noreferrer">Publisher →</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="profile-links" aria-labelledby="research-profiles">
+      <h2 id="research-profiles">Research profiles</h2>
+      <p>
+        For a broader publication record, citations and research activity, see the profiles below.
+      </p>
+      <div class="actions">
+        <a class="button" href="https://scholar.google.com/citations?user=cFw_hV0AAAAJ&hl=en" target="_blank" rel="noopener noreferrer">Google Scholar →</a>
+        <a class="button" href="https://orcid.org/0009-0003-6625-680X" target="_blank" rel="noopener noreferrer">ORCID →</a>
+        <a class="button" href="https://www.researchgate.net/profile/Omotayo-Omoyemi" target="_blank" rel="noopener noreferrer">ResearchGate →</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © Omotayo Emmanuel Omoyemi. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
