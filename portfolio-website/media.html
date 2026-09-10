@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Media & Recognition | Omotayo Emmanuel Omoyemi</title>
+  <meta name="description" content="Independent media coverage and recognition featuring Omotayo Emmanuel Omoyemi and his work in artificial intelligence, accessible technology, multimodal AI and inclusive communication.">
+
+  <link rel="canonical" href="https://omotayo-emmanuel-omoyemi.vercel.app/media.html">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Media & Recognition | Omotayo Emmanuel Omoyemi">
+  <meta property="og:description" content="Independent media coverage and recognition featuring Omotayo Emmanuel Omoyemi.">
+  <meta property="og:url" content="https://omotayo-emmanuel-omoyemi.vercel.app/media.html">
+
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --panel-2: #1f2937;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #60a5fa;
+      --border: rgba(255,255,255,.12);
+      --max: 1120px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #0f172a 0%, #111827 100%);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    a { color: inherit; }
+
+    .container {
+      width: min(92%, var(--max));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(15, 23, 42, .94);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+
+    nav {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      font-weight: 800;
+      text-decoration: none;
+      font-size: 1.1rem;
+      letter-spacing: .2px;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: .95rem;
+    }
+
+    .nav-links a:hover,
+    .nav-links a[aria-current="page"] {
+      color: var(--text);
+    }
+
+    .hero {
+      padding: 88px 0 48px;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-weight: 800;
+      font-size: .8rem;
+      margin: 0 0 12px;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 6vw, 4.6rem);
+      line-height: 1.05;
+      margin: 0 0 20px;
+      max-width: 900px;
+    }
+
+    .intro {
+      color: var(--muted);
+      max-width: 820px;
+      font-size: 1.08rem;
+      margin: 0;
+    }
+
+    main {
+      padding-bottom: 80px;
+    }
+
+    .section-heading {
+      margin: 42px 0 24px;
+    }
+
+    .section-heading h2 {
+      font-size: 1.75rem;
+      margin: 0 0 8px;
+    }
+
+    .section-heading p {
+      color: var(--muted);
+      margin: 0;
+    }
+
+    .media-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .media-card {
+      background: rgba(17, 24, 39, .9);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+    }
+
+    .media-card:hover {
+      border-color: rgba(96,165,250,.55);
+    }
+
+    .source {
+      display: inline-block;
+      font-size: .78rem;
+      font-weight: 800;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: .05em;
+      margin-bottom: 8px;
+    }
+
+    .media-card h3 {
+      margin: 0 0 10px;
+      font-size: 1.22rem;
+      line-height: 1.35;
+    }
+
+    .meta {
+      margin: 0 0 12px;
+      color: var(--muted);
+      font-size: .95rem;
+    }
+
+    .media-card p {
+      margin: 0 0 14px;
+      color: var(--muted);
+    }
+
+    .button {
+      display: inline-block;
+      text-decoration: none;
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: 8px 14px;
+      font-size: .9rem;
+      font-weight: 700;
+    }
+
+    .button:hover {
+      border-color: var(--accent);
+    }
+
+    .note {
+      margin-top: 38px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 24px;
+      background: rgba(31, 41, 55, .65);
+    }
+
+    .note h2 {
+      margin-top: 0;
+    }
+
+    .note p {
+      color: var(--muted);
+      margin-bottom: 0;
+    }
+
+    footer {
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      text-align: center;
+      padding: 28px 0;
+      font-size: .9rem;
+    }
+
+    @media (max-width: 720px) {
+      nav {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 16px 0;
+      }
+
+      .nav-links { gap: 12px; }
+      .hero { padding-top: 58px; }
+      .media-card { padding: 20px; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Media & Recognition | Omotayo Emmanuel Omoyemi",
+    "url": "https://omotayo-emmanuel-omoyemi.vercel.app/media.html",
+    "about": {
+      "@type": "Person",
+      "@id": "https://omotayo-emmanuel-omoyemi.vercel.app/#person",
+      "name": "Omotayo Emmanuel Omoyemi",
+      "alternateName": "Omotayo Omoyemi"
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "url": "https://punchng.com/nigerian-creates-ai-to-address-speech-challenges/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "url": "https://techcabal.com/2025/11/17/how-an-african-researchers-ai-that-translates-makaton-to-english-earned-2nd-place-at-the-2025-ai-rising-star-awards/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "url": "https://guardian.ng/news/predictive-communication-for-all-the-future-of-inclusive-tech-is-here/"
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav aria-label="Primary navigation">
+        <a class="brand" href="/">Omotayo Emmanuel Omoyemi</a>
+        <div class="nav-links">
+          <a href="/">Home</a>
+          <a href="/#about">About</a>
+          <a href="/#projects">Projects</a>
+          <a href="/publications.html">Publications</a>
+          <a href="/#credentials">Credentials</a>
+          <a href="/#contact">Contact</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Independent Coverage</p>
+      <h1>Media & Recognition</h1>
+      <p class="intro">
+        Selected independent media coverage and recognition featuring Omotayo Emmanuel Omoyemi
+        and his work in artificial intelligence, accessible technology, multimodal AI,
+        augmentative and alternative communication, and inclusive computing.
+      </p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section aria-labelledby="media-coverage">
+      <div class="section-heading">
+        <h2 id="media-coverage">Media Coverage</h2>
+        <p>Independent articles discussing Omotayo Emmanuel Omoyemi and his research or technology work.</p>
+      </div>
+
+      <div class="media-grid">
+
+        <article class="media-card">
+          <span class="source">The PUNCH · 16 April 2025</span>
+          <h3>Nigerian creates AI to address speech challenges</h3>
+          <p class="meta">By Justice Okamgba · The PUNCH</p>
+          <p>
+            Coverage of Omotayo Omoyemi's AI tool for translating Makaton signs from live video
+            into written English, with a focus on communication accessibility and inclusive technology.
+          </p>
+          <a class="button"
+             href="https://punchng.com/nigerian-creates-ai-to-address-speech-challenges/"
+             target="_blank"
+             rel="noopener noreferrer">Read article →</a>
+        </article>
+
+        <article class="media-card">
+          <span class="source">TechCabal · 17 November 2025</span>
+          <h3>How an African researcher's AI that translates Makaton to English earned 2nd place at the 2025 AI Rising Star Awards</h3>
+          <p class="meta">TechCabal</p>
+          <p>
+            Coverage of the Makaton-to-English AI project and its recognition at the 2025
+            AI Rising Star Awards.
+          </p>
+          <a class="button"
+             href="https://techcabal.com/2025/11/17/how-an-african-researchers-ai-that-translates-makaton-to-english-earned-2nd-place-at-the-2025-ai-rising-star-awards/"
+             target="_blank"
+             rel="noopener noreferrer">Read article →</a>
+        </article>
+
+        <article class="media-card">
+          <span class="source">The Guardian Nigeria · 18 November 2024</span>
+          <h3>Predictive communication for all: The future of inclusive tech is here</h3>
+          <p class="meta">By Oladayo Nuel · The Guardian Nigeria</p>
+          <p>
+            A feature on Omotayo Emmanuel Omoyemi's research into AI-driven augmentative and
+            alternative communication, predictive communication and accessible technology.
+          </p>
+          <a class="button"
+             href="https://guardian.ng/news/predictive-communication-for-all-the-future-of-inclusive-tech-is-here/"
+             target="_blank"
+             rel="noopener noreferrer">Read article →</a>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="note" aria-labelledby="about-page">
+      <h2 id="about-page">About this page</h2>
+      <p>
+        This page lists third-party media coverage and recognition. Academic publications and
+        technical writing by Omotayo Emmanuel Omoyemi are listed separately on the Publications page.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © Omotayo Emmanuel Omoyemi. All rights reserved.
+    </div>
+  </footer>
+</body>
+</html>
